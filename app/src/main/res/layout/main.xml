@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+
     android:orientation="vertical" >
 
     <LinearLayout
@@ -12,16 +13,16 @@
         android:orientation="vertical">
 
         <TextView
-            android:textColor="#000000"
             android:id="@+id/TextView03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_semibold"
             android:text="Site : "
-            android:textSize="25dp" />
+            android:textColor="#000000"
+            android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/EditTextSite"
+            android:id="@+id/editTextSite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -35,10 +36,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Username : "
-            android:textSize="25dp" />
+            android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/EditTextUsername"
+            android:id="@+id/editTextUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -52,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Password : "
-            android:textSize="25dp" />
+            android:textSize="20dp" />
 
         <EditText
             android:id="@+id/editTextPassword"
@@ -62,6 +63,8 @@
             android:inputType="textPassword"
             android:singleLine="true" />
 
+
+
         <TextView
             android:fontFamily="@font/poppins_semibold"
             android:textColor="#000000"
@@ -70,7 +73,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Additional note : "
-            android:textSize="25dp" />
+            android:textSize="20dp" />
+
+
 
         <EditText
             android:id="@+id/editTextAdditional"
@@ -79,7 +84,7 @@
             android:ems="10"
             android:inputType="textMultiLine"
             android:gravity="top"
-            android:lines="4" >
+            android:lines="2" >
 
             <requestFocus />
         </EditText>
@@ -112,7 +117,7 @@
 
         <Button
             android:fontFamily="@font/poppins_semibold"
-            android:id="@+id/ButtonReset"
+            android:id="@+id/buttonUpdate"
             android:backgroundTint="@color/colorPrimary"
             android:background="@drawable/btn_bg"
             android:textColor="#ffffff"
@@ -120,7 +125,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="30"
-            android:text="Reset" />
+            android:text="Update" />
+
     </LinearLayout>
 
 </LinearLayout>

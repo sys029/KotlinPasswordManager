@@ -4,71 +4,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <ScrollView
-        android:layout_margin="5dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
-        <TableLayout
-            android:id="@+id/maintable"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#3B3B3B"
-            >
-
-            <TableRow
-                android:textAlignment="center"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="5dp"
-                 >
-
-                <TextView
-                    android:background="#3023AE"
-                    android:textAlignment="center"
-                    android:paddingLeft="5dp"
-                    android:layout_weight="50"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:id="@+id/attrib_site"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Site"
-                    android:textColor="#fff" />
-
-                <TextView
-                    android:textAlignment="center"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:background="#000000"
-                    android:id="@+id/attrib_username"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="50"
-                    android:text="Username"
-                    android:textColor="#fff" />
-
-                <TextView
-                    android:background="#000000"
-                    android:paddingLeft="5dp"
-                    android:id="@+id/attrib_pass"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="50"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:text="Password"
-                    android:textColor="#fff" />
-
-                <TextView
-                    android:background="#000000"
-                    android:paddingLeft="5dp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:id="@+id/attrib_additional"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="50"
-                    android:text="Additinal Note"
-                    android:textColor="#fff" />
-            </TableRow>
-        </TableLayout>
-    </ScrollView>
+        android:layout_height="match_parent" />
 
 </LinearLayout>
